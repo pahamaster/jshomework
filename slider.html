@@ -1,0 +1,97 @@
+<style type="text/css">
+  .slider{
+    display: flex;
+    width: 300px;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+
+  .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: papayawhip;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #444;
+  }
+
+  .items{
+    display: flex;
+    position: relative;
+    color: #444;
+    font-size: 40px;
+    right: 0;
+    transition: right .3s;
+  }
+
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 200;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fdf6e380;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  .modal-container{
+    width: 200px;;
+    height: 25px;
+    border-radius: 5px;
+    background: yellowgreen;
+    position: relative;
+  }
+
+  .close{
+    position: absolute;
+    left: 190px;
+    top: -10px;
+    background: red;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    height: 20px;
+    width: 20px;
+  }
+
+  .content{
+    padding: 1% 2%;
+  }
+</style>
+
+
+
+<body>
+  <div class="simple-slider-container">
+    <a href="#" class="arrow" id="left">a</a>
+    <div class="slider">
+      <ul class="items" id="items">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+        <li class="item">6</li>
+        <li class="item">7</li>
+        <li class="item">8</li>
+        <li class="item">9</li>
+      </ul>
+    </div>
+    <a href="#" class="arrow" id="right">a</a>
+  </div>
+  <button class="btn" id="openOverlay">Открыть</button>
+
+</body>
+
+<script src="slider.js"></script>

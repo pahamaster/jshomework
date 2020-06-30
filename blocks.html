@@ -1,0 +1,30 @@
+<style>
+  .blocks{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+</style>
+
+<body>
+  <div class="blocks-coloring-container">
+    <div class="controls">
+      <input type="number" min="0" class="quantity-selector">
+      <input type="color" class="color-selector">
+    </div>
+    <div class="blocks">
+    </div>
+  </div>
+  <script src="blocks.js"></script>
+</body>
